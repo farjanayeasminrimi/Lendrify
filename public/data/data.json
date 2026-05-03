@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "title": "The Silent Forest",
+    "author": "Aria Collins",
+    "description": "A mysterious tale of a village surrounded by a forest where no one dares to enter.",
+    "category": "Story",
+    "available_quantity": 12,
+    "popularity": 87,
+    "release_date": "2023-05-14",
+    "image_url": "https://example.com/images/silent-forest.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Mastering JavaScript",
+    "author": "Liam Turner",
+    "description": "A comprehensive guide to modern JavaScript, covering ES6+ features and best practices.",
+    "category": "Tech",
+    "available_quantity": 8,
+    "popularity": 95,
+    "release_date": "2024-01-10",
+    "image_url": "https://example.com/images/mastering-js.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Quantum Realities",
+    "author": "Dr. Sophia Reed",
+    "description": "An exploration of quantum physics and how it shapes our understanding of the universe.",
+    "category": "Science",
+    "available_quantity": 5,
+    "popularity": 78,
+    "release_date": "2022-11-22",
+    "image_url": "https://example.com/images/quantum-realities.jpg"
+  },
+  {
+    "id": 4,
+    "title": "The Lost Kingdom",
+    "author": "Ethan Blake",
+    "description": "An epic adventure of a young hero seeking a forgotten kingdom hidden beyond the seas.",
+    "category": "Story",
+    "available_quantity": 10,
+    "popularity": 89,
+    "release_date": "2024-03-18",
+    "image_url": "https://example.com/images/lost-kingdom.jpg"
+  },
+  {
+    "id": 5,
+    "title": "AI for Beginners",
+    "author": "Olivia Grant",
+    "description": "An introductory book on artificial intelligence, machine learning, and their applications.",
+    "category": "Tech",
+    "available_quantity": 15,
+    "popularity": 92,
+    "release_date": "2025-02-05",
+    "image_url": "https://example.com/images/ai-beginners.jpg"
+  },
+  {
+    "id": 6,
+    "title": "The Cosmos Within",
+    "author": "Dr. Noah Carter",
+    "description": "A fascinating look into human biology and how our bodies mirror the universe.",
+    "category": "Science",
+    "available_quantity": 7,
+    "popularity": 74,
+    "release_date": "2023-08-30",
+    "image_url": "https://example.com/images/cosmos-within.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Whispers of the Night",
+    "author": "Maya Bennett",
+    "description": "A suspenseful story of secrets revealed under the cover of darkness.",
+    "category": "Story",
+    "available_quantity": 9,
+    "popularity": 85,
+    "release_date": "2025-01-12",
+    "image_url": "https://example.com/images/whispers-night.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Next.js in Action",
+    "author": "Daniel Scott",
+    "description": "A practical guide to building modern web applications using Next.js.",
+    "category": "Tech",
+    "available_quantity": 6,
+    "popularity": 90,
+    "release_date": "2024-06-25",
+    "image_url": "https://example.com/images/nextjs-action.jpg"
+  },
+  {
+    "id": 9,
+    "title": "The Brain Explained",
+    "author": "Dr. Emily Watson",
+    "description": "An insightful overview of neuroscience and how the human brain functions.",
+    "category": "Science",
+    "available_quantity": 11,
+    "popularity": 80,
+    "release_date": "2023-12-02",
+    "image_url": "https://example.com/images/brain-explained.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Echoes of Time",
+    "author": "Lucas Gray",
+    "description": "A time-travel story where past and present collide in unexpected ways.",
+    "category": "Story",
+    "available_quantity": 4,
+    "popularity": 88,
+    "release_date": "2025-03-01",
+    "image_url": "https://example.com/images/echoes-time.jpg"
+  },
+  {
+    "id": 11,
+    "title": "Clean Code Principles",
+    "author": "Henry Adams",
+    "description": "Best practices and principles for writing clean, maintainable code.",
+    "category": "Tech",
+    "available_quantity": 13,
+    "popularity": 93,
+    "release_date": "2022-09-15",
+    "image_url": "https://example.com/images/clean-code.jpg"
+  },
+  {
+    "id": 12,
+    "title": "Astrophysics 101",
+    "author": "Dr. James Miller",
+    "description": "A beginner-friendly introduction to stars, galaxies, and the universe.",
+    "category": "Science",
+    "available_quantity": 6,
+    "popularity": 76,
+    "release_date": "2024-11-08",
+    "image_url": "https://example.com/images/astrophysics-101.jpg"
+  }
+]
