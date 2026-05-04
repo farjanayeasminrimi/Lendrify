@@ -7,7 +7,7 @@ import MarqueeText from "@/components/Shared/MarqueeText";
 
 export default function Home() {
   return (
-    <div className="mt-12 pt-10">
+    <div className=" ">
       {/* Hero Section */}
       <Hero></Hero>
       <MarqueeText></MarqueeText>

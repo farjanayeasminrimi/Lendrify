@@ -6,7 +6,7 @@ import NavLink from "./NavLink";
 
 const Navbar = () => {
   return (
-    <div className="bg-base-100 shadow-sm">
+    <div className="bg-[#e4e1dd] sticky top-0 z-10 shadow-sm">
       <div className="navbar container mx-auto  ">
         <div className="navbar-start">
           <div className="dropdown">
@@ -37,7 +37,9 @@ const Navbar = () => {
             </ul>
           </div>
           <div>
-            <Image src={logo} width={150} height={30} alt="logo"></Image>
+            <Link href={"/"}>
+              <Image src={logo} width={150} height={30} alt="logo"></Image>
+            </Link>
           </div>
         </div>
         <div className="navbar-center hidden lg:flex">

@@ -1,2 +1,11 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+.bannerImg {
+  background-image: url(../assets/hero-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.swiper-pagination-bullet-active {
+  background-color: #5f737afa !important;
+}
