@@ -28,7 +28,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="EN" data-theme="light" className={` h-full antialiased light`}>
-      <body className={`min-h-full flex flex-col ${sora.className}`}>
+      <body className={`min-h-full flex flex-col bg-[#F3EFEA]/25 ${sora.className}`}>
         <Navbar></Navbar>
         <main>{children}</main>
       </body>

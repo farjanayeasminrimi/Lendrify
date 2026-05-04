@@ -3,7 +3,7 @@ import Marquee from "react-fast-marquee";
 
 const MarqueeText = () => {
   return (
-    <div className="container mx-auto bg bg-[#E6DED3] p-4 rounded-md flex gap-2.5 items-center">
+    <div className="container mx-auto bg bg-gradient-to-r from-[#EEF2F1] via-[#DCE3E1] to-[#A3B3AF] p-4 rounded-md flex gap-2.5 items-center">
       <button className="btn bg-[#5F737A] hover:bg-[#4C5E64] text-white">Update :</button>
       <Marquee pauseOnHover>
         <p className="text-[#2F3A3D] font-medium">
