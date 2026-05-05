@@ -4,7 +4,7 @@ import React from "react";
 
 const AllBookPage = async () => {
   const categories = await categoriesData();
-  // console.log(categories);
+  console.log(categories);
   return (
     <div className="mb-12 pt-9 pb-18">
       <div className="container mx-auto">
