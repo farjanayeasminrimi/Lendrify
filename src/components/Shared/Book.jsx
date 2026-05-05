@@ -7,12 +7,12 @@ const Book = ({ book }) => {
   const { id, title, popularity, image_url, author, price } = book;
   // console.log(book);
   return (
-    <div className="pt-6 px-2 pb-2 bg-gray-100 shadow-xs border border-gray-200 hover:border-[#2F3A3D]/30 rounded-2xl">
+    <div className=" py-3 px-2  bg-gray-100 shadow-xs border border-gray-200 hover:border-[#2F3A3D]/30 rounded-2xl">
       <div className="mx-auto">
         <Image
           className="rounded-2xl mx-auto"
           src={image_url}
-          width={150}
+          width={110}
           height={100}
           alt="book image"
         ></Image>
