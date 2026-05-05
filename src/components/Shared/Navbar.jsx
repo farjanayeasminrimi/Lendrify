@@ -3,6 +3,9 @@ import Link from "next/link";
 import React from "react";
 import logo from "@/assets/Logo.png";
 import NavLink from "./NavLink";
+import { IoHomeOutline } from "react-icons/io5";
+import { LiaSwatchbookSolid } from "react-icons/lia";
+import { ImProfile } from "react-icons/im";
 
 const Navbar = () => {
   return (
@@ -31,9 +34,15 @@ const Navbar = () => {
               tabIndex="-1"
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
-              <NavLink href={"/"}>Home</NavLink>
-              <NavLink href={"/allbooks"}>All Books</NavLink>
-              <NavLink href={"/myprofile"}>My Profile</NavLink>
+              <NavLink href={"/"}>
+                <IoHomeOutline /> Home
+              </NavLink>
+              <NavLink href={"/allbooks"}>
+                <LiaSwatchbookSolid /> All Books
+              </NavLink>
+              <NavLink href={"/myprofile"}>
+                <ImProfile /> My Profile
+              </NavLink>
             </ul>
           </div>
           <div>
@@ -44,9 +53,15 @@ const Navbar = () => {
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="flex gap-6 justify-between items-center">
-            <NavLink href={"/"}>Home</NavLink>
-            <NavLink href={"/allbooks"}>All Books</NavLink>
-            <NavLink href={"/myprofile"}>My Profile</NavLink>
+            <NavLink href={"/"}>
+              <IoHomeOutline /> Home
+            </NavLink>
+            <NavLink href={"/allbooks"}>
+              <LiaSwatchbookSolid /> All Books
+            </NavLink>
+            <NavLink href={"/myprofile"}>
+              <ImProfile /> My Profile
+            </NavLink>
           </ul>
         </div>
         <div className="navbar-end ">

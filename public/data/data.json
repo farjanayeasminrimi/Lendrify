@@ -1,146 +1,358 @@
-[
-  {
-    "id": 1,
-    "title": "Atomic Habits",
-    "author": "James Clear",
-    "description": "A practical guide to building good habits and breaking bad ones with small changes.",
-    "category": "Self-Improvement",
-    "available_quantity": 12,
-    "popularity": 98,
-    "price": 14.99,
-    "release_date": "2018-10-16",
-    "image_url": "https://i.ibb.co.com/HWsdXG6/atomic-habits.jpg"
-  },
-  {
-    "id": 2,
-    "title": "The Psychology of Money",
-    "author": "Morgan Housel",
-    "description": "Timeless lessons on wealth, greed, and happiness through behavioral finance.",
-    "category": "Finance",
-    "available_quantity": 10,
-    "popularity": 95,
-    "price": 13.5,
-    "release_date": "2020-09-08",
-    "image_url": "https://i.ibb.co.com/k6GQtqXJ/The-Psychology-of-Money.jpg"
-  },
-  {
-    "id": 3,
-    "title": "Deep Work",
-    "author": "Cal Newport",
-    "description": "Rules for focused success in a distracted world.",
-    "category": "Productivity",
-    "available_quantity": 8,
-    "popularity": 92,
-    "price": 12.99,
-    "release_date": "2016-01-05",
-    "image_url": "https://i.ibb.co.com/JWWpz66n/Can-t-Hurt-Me.jpg"
-  },
-  {
-    "id": 4,
-    "title": "Can't Hurt Me",
-    "author": "David Goggins",
-    "description": "A memoir of mental toughness, discipline, and pushing human limits.",
-    "category": "Motivation",
-    "available_quantity": 15,
-    "popularity": 97,
-    "price": 16.99,
-    "release_date": "2018-12-04",
-    "image_url": "https://i.ibb.co.com/JWWpz66n/Can-t-Hurt-Me.jpg"
-  },
-  {
-    "id": 5,
-    "title": "Zero to One",
-    "author": "Peter Thiel",
-    "description": "Notes on startups and building the future through innovation.",
-    "category": "Business",
-    "available_quantity": 9,
-    "popularity": 90,
-    "price": 15.0,
-    "release_date": "2014-09-16",
-    "image_url": "https://i.ibb.co.com/hFv81qGC/Zero-to-One.jpg"
-  },
-  {
-    "id": 6,
-    "title": "Sapiens",
-    "author": "Yuval Noah Harari",
-    "description": "A journey through the history and evolution of humankind.",
-    "category": "History",
-    "available_quantity": 14,
-    "popularity": 99,
-    "price": 18.5,
-    "release_date": "2011-01-01",
-    "image_url": "https://i.ibb.co.com/jZ1jRr6k/Sapiens.jpg"
-  },
-  {
-    "id": 7,
-    "title": "The Subtle Art of Not Giving a F*ck",
-    "author": "Mark Manson",
-    "description": "A counterintuitive approach to living a good life.",
-    "category": "Self-Help",
-    "available_quantity": 11,
-    "popularity": 94,
-    "price": 13.99,
-    "release_date": "2016-09-13",
-    "image_url": "https://i.ibb.co.com/HDksm4JR/art-Fck.jpg"
-  },
-  {
-    "id": 8,
-    "title": "Think and Grow Rich",
-    "author": "Napoleon Hill",
-    "description": "Classic principles of success and wealth creation.",
-    "category": "Finance",
-    "available_quantity": 20,
-    "popularity": 96,
-    "price": 11.99,
-    "release_date": "1937-01-01",
-    "image_url": "https://i.ibb.co.com/QFr01Prp/Think-and-Grow-Rich.jpg"
-  },
-  {
-    "id": 9,
-    "title": "Rich Dad Poor Dad",
-    "author": "Robert Kiyosaki",
-    "description": "Lessons on financial intelligence from two father figures.",
-    "category": "Finance",
-    "available_quantity": 13,
-    "popularity": 93,
-    "price": 12.5,
-    "release_date": "1997-04-01",
-    "image_url": "https://i.ibb.co.com/ZpxQNSvs/Rich-Dad-Poor-Dad.jpg"
-  },
-  {
-    "id": 10,
-    "title": "The Alchemist",
-    "author": "Paulo Coelho",
-    "description": "A mystical journey of following your dreams.",
-    "category": "Fiction",
-    "available_quantity": 18,
-    "popularity": 97,
-    "price": 10.99,
-    "release_date": "1988-01-01",
-    "image_url": "https://i.ibb.co.com/1J9ty5Lx/The-Alchemist.jpg"
-  },
-  {
-    "id": 11,
-    "title": "Hooked",
-    "author": "Nir Eyal",
-    "description": "How to build habit-forming products in the digital age.",
-    "category": "Technology",
-    "available_quantity": 7,
-    "popularity": 88,
-    "price": 14.25,
-    "release_date": "2014-11-04",
-    "image_url": "https://i.ibb.co.com/n83FqNbT/Hooked.jpg"
-  },
-  {
-    "id": 12,
-    "title": "The Mountain Is You",
-    "author": "Brianna Wiest",
-    "description": "Transforming self-sabotage into self-mastery.",
-    "category": "Self-Help",
-    "available_quantity": 16,
-    "popularity": 91,
-    "price": 15.75,
-    "release_date": "2020-06-01",
-    "image_url": "https://i.ibb.co.com/CKyDG0W1/The-Mountain-Is-You.jpg"
-  }
-]
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Atomic Habits",
+      "author": "James Clear",
+      "description": "A practical guide to building good habits and breaking bad ones with small changes.",
+      "category": "Self-Improvement",
+      "available_quantity": 12,
+      "popularity": 98,
+      "price": 14.99,
+      "release_date": "2018-10-16",
+      "image_url": "https://i.ibb.co.com/HWsdXG6/atomic-habits.jpg"
+    },
+    {
+      "id": 2,
+      "title": "The Psychology of Money",
+      "author": "Morgan Housel",
+      "description": "Timeless lessons on wealth, greed, and happiness through behavioral finance.",
+      "category": "Finance",
+      "available_quantity": 10,
+      "popularity": 95,
+      "price": 13.5,
+      "release_date": "2020-09-08",
+      "image_url": "https://i.ibb.co.com/k6GQtqXJ/The-Psychology-of-Money.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Deep Work",
+      "author": "Cal Newport",
+      "description": "Rules for focused success in a distracted world.",
+      "category": "Productivity",
+      "available_quantity": 8,
+      "popularity": 92,
+      "price": 12.99,
+      "release_date": "2016-01-05",
+      "image_url": "https://i.ibb.co.com/JWWpz66n/Can-t-Hurt-Me.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Can't Hurt Me",
+      "author": "David Goggins",
+      "description": "A memoir of mental toughness, discipline, and pushing human limits.",
+      "category": "Motivation",
+      "available_quantity": 15,
+      "popularity": 97,
+      "price": 16.99,
+      "release_date": "2018-12-04",
+      "image_url": "https://i.ibb.co.com/JWWpz66n/Can-t-Hurt-Me.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Zero to One",
+      "author": "Peter Thiel",
+      "description": "Notes on startups and building the future through innovation.",
+      "category": "Business",
+      "available_quantity": 9,
+      "popularity": 90,
+      "price": 15.0,
+      "release_date": "2014-09-16",
+      "image_url": "https://i.ibb.co.com/hFv81qGC/Zero-to-One.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Sapiens",
+      "author": "Yuval Noah Harari",
+      "description": "A journey through the history and evolution of humankind.",
+      "category": "History",
+      "available_quantity": 14,
+      "popularity": 99,
+      "price": 18.5,
+      "release_date": "2011-01-01",
+      "image_url": "https://i.ibb.co.com/jZ1jRr6k/Sapiens.jpg"
+    },
+    {
+      "id": 7,
+      "title": "The Subtle Art of Not Giving a F*ck",
+      "author": "Mark Manson",
+      "description": "A counterintuitive approach to living a good life.",
+      "category": "Self-Help",
+      "available_quantity": 11,
+      "popularity": 94,
+      "price": 13.99,
+      "release_date": "2016-09-13",
+      "image_url": "https://i.ibb.co.com/HDksm4JR/art-Fck.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Think and Grow Rich",
+      "author": "Napoleon Hill",
+      "description": "Classic principles of success and wealth creation.",
+      "category": "Finance",
+      "available_quantity": 20,
+      "popularity": 96,
+      "price": 11.99,
+      "release_date": "1937-01-01",
+      "image_url": "https://i.ibb.co.com/QFr01Prp/Think-and-Grow-Rich.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Rich Dad Poor Dad",
+      "author": "Robert Kiyosaki",
+      "description": "Lessons on financial intelligence from two father figures.",
+      "category": "Finance",
+      "available_quantity": 13,
+      "popularity": 93,
+      "price": 12.5,
+      "release_date": "1997-04-01",
+      "image_url": "https://i.ibb.co.com/ZpxQNSvs/Rich-Dad-Poor-Dad.jpg"
+    },
+    {
+      "id": 10,
+      "title": "The Alchemist",
+      "author": "Paulo Coelho",
+      "description": "A mystical journey of following your dreams.",
+      "category": "Fiction",
+      "available_quantity": 18,
+      "popularity": 97,
+      "price": 10.99,
+      "release_date": "1988-01-01",
+      "image_url": "https://i.ibb.co.com/1J9ty5Lx/The-Alchemist.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Hooked",
+      "author": "Nir Eyal",
+      "description": "How to build habit-forming products in the digital age.",
+      "category": "Technology",
+      "available_quantity": 7,
+      "popularity": 88,
+      "price": 14.25,
+      "release_date": "2014-11-04",
+      "image_url": "https://i.ibb.co.com/n83FqNbT/Hooked.jpg"
+    },
+    {
+      "id": 12,
+      "title": "The Mountain Is You",
+      "author": "Brianna Wiest",
+      "description": "Transforming self-sabotage into self-mastery.",
+      "category": "Self-Help",
+      "available_quantity": 16,
+      "popularity": 91,
+      "price": 15.75,
+      "release_date": "2020-06-01",
+      "image_url": "https://i.ibb.co.com/CKyDG0W1/The-Mountain-Is-You.jpg"
+    }
+  ],
+
+  "categories": [
+    {
+      "id": 1,
+      "name": "Self-Improvement",
+      "slug": "self-improvement",
+      "books": [
+        {
+          "id": 1,
+          "title": "Atomic Habits",
+          "author": "James Clear",
+          "description": "A practical guide to building good habits and breaking bad ones with small changes.",
+          "category": "Self-Improvement",
+          "available_quantity": 12,
+          "popularity": 98,
+          "price": 14.99,
+          "release_date": "2018-10-16",
+          "image_url": "https://i.ibb.co.com/HWsdXG6/atomic-habits.jpg"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Finance",
+      "slug": "finance",
+      "books": [
+        {
+          "id": 2,
+          "title": "The Psychology of Money",
+          "author": "Morgan Housel",
+          "description": "Timeless lessons on wealth, greed, and happiness through behavioral finance.",
+          "category": "Finance",
+          "available_quantity": 10,
+          "popularity": 95,
+          "price": 13.5,
+          "release_date": "2020-09-08",
+          "image_url": "https://i.ibb.co.com/k6GQtqXJ/The-Psychology-of-Money.jpg"
+        },
+        {
+          "id": 8,
+          "title": "Think and Grow Rich",
+          "author": "Napoleon Hill",
+          "description": "Classic principles of success and wealth creation.",
+          "category": "Finance",
+          "available_quantity": 20,
+          "popularity": 96,
+          "price": 11.99,
+          "release_date": "1937-01-01",
+          "image_url": "https://i.ibb.co.com/QFr01Prp/Think-and-Grow-Rich.jpg"
+        },
+        {
+          "id": 9,
+          "title": "Rich Dad Poor Dad",
+          "author": "Robert Kiyosaki",
+          "description": "Lessons on financial intelligence from two father figures.",
+          "category": "Finance",
+          "available_quantity": 13,
+          "popularity": 93,
+          "price": 12.5,
+          "release_date": "1997-04-01",
+          "image_url": "https://i.ibb.co.com/ZpxQNSvs/Rich-Dad-Poor-Dad.jpg"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Productivity",
+      "slug": "productivity",
+      "books": [
+        {
+          "id": 3,
+          "title": "Deep Work",
+          "author": "Cal Newport",
+          "description": "Rules for focused success in a distracted world.",
+          "category": "Productivity",
+          "available_quantity": 8,
+          "popularity": 92,
+          "price": 12.99,
+          "release_date": "2016-01-05",
+          "image_url": "https://i.ibb.co.com/JWWpz66n/Can-t-Hurt-Me.jpg"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Motivation",
+      "slug": "motivation",
+      "books": [
+        {
+          "id": 4,
+          "title": "Can't Hurt Me",
+          "author": "David Goggins",
+          "description": "A memoir of mental toughness, discipline, and pushing human limits.",
+          "category": "Motivation",
+          "available_quantity": 15,
+          "popularity": 97,
+          "price": 16.99,
+          "release_date": "2018-12-04",
+          "image_url": "https://i.ibb.co.com/JWWpz66n/Can-t-Hurt-Me.jpg"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Business",
+      "slug": "business",
+      "books": [
+        {
+          "id": 5,
+          "title": "Zero to One",
+          "author": "Peter Thiel",
+          "description": "Notes on startups and building the future through innovation.",
+          "category": "Business",
+          "available_quantity": 9,
+          "popularity": 90,
+          "price": 15.0,
+          "release_date": "2014-09-16",
+          "image_url": "https://i.ibb.co.com/hFv81qGC/Zero-to-One.jpg"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "History",
+      "slug": "history",
+      "books": [
+        {
+          "id": 6,
+          "title": "Sapiens",
+          "author": "Yuval Noah Harari",
+          "description": "A journey through the history and evolution of humankind.",
+          "category": "History",
+          "available_quantity": 14,
+          "popularity": 99,
+          "price": 18.5,
+          "release_date": "2011-01-01",
+          "image_url": "https://i.ibb.co.com/jZ1jRr6k/Sapiens.jpg"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Self-Help",
+      "slug": "self-help",
+      "books": [
+        {
+          "id": 7,
+          "title": "The Subtle Art of Not Giving a F*ck",
+          "author": "Mark Manson",
+          "description": "A counterintuitive approach to living a good life.",
+          "category": "Self-Help",
+          "available_quantity": 11,
+          "popularity": 94,
+          "price": 13.99,
+          "release_date": "2016-09-13",
+          "image_url": "https://i.ibb.co.com/HDksm4JR/art-Fck.jpg"
+        },
+        {
+          "id": 12,
+          "title": "The Mountain Is You",
+          "author": "Brianna Wiest",
+          "description": "Transforming self-sabotage into self-mastery.",
+          "category": "Self-Help",
+          "available_quantity": 16,
+          "popularity": 91,
+          "price": 15.75,
+          "release_date": "2020-06-01",
+          "image_url": "https://i.ibb.co.com/CKyDG0W1/The-Mountain-Is-You.jpg"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Fiction",
+      "slug": "fiction",
+      "books": [
+        {
+          "id": 10,
+          "title": "The Alchemist",
+          "author": "Paulo Coelho",
+          "description": "A mystical journey of following your dreams.",
+          "category": "Fiction",
+          "available_quantity": 18,
+          "popularity": 97,
+          "price": 10.99,
+          "release_date": "1988-01-01",
+          "image_url": "https://i.ibb.co.com/1J9ty5Lx/The-Alchemist.jpg"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Technology",
+      "slug": "technology",
+      "books": [
+        {
+          "id": 11,
+          "title": "Hooked",
+          "author": "Nir Eyal",
+          "description": "How to build habit-forming products in the digital age.",
+          "category": "Technology",
+          "available_quantity": 7,
+          "popularity": 88,
+          "price": 14.25,
+          "release_date": "2014-11-04",
+          "image_url": "https://i.ibb.co.com/n83FqNbT/Hooked.jpg"
+        }
+      ]
+    }
+  ]
+}
