@@ -1,8 +1,51 @@
+"use client";
+import { authClient } from "@/lib/auth-client";
 import Link from "next/link";
+import { redirect } from "next/navigation";
 import React from "react";
 import { FcGoogle } from "react-icons/fc";
+import { Bounce, toast } from "react-toastify";
 
 const LoginPage = () => {
+  const onSubmit = async (e) => {
+    e.preventDefault();
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+
+    const { data, error } = await authClient.signIn.email({
+      email: email, // required
+      password: password, // required
+      callbackURL: "/",
+    });
+    console.log(data, error);
+    if (data) {
+      toast.success("Login Successful!", {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        transition: Bounce,
+      });
+      redirect("/");
+    }
+    if (error) {
+      toast.error(`${error.message}`, {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        transition: Bounce,
+      });
+    }
+  };
   return (
     <div className=" bg-[#F3EFEA]">
       <div className="min-h-screen flex items-center justify-center">
@@ -11,7 +54,7 @@ const LoginPage = () => {
           <span className="mb-4 mt-2 text-center text-[.8rem] block text-gray-400 ">
             Please Enter Your Details
           </span>
-          <form action="">
+          <form onSubmit={onSubmit}>
             <label className="label my-2">Email</label>
             <input
               name="email"
@@ -30,13 +73,13 @@ const LoginPage = () => {
 
             <button
               type="submit"
-              class="btn mt-4 bg-[#5F737A] hover:bg-[#4C5E64] text-white w-full"
+              className="btn mt-4 bg-[#5F737A] hover:bg-[#4C5E64] text-white w-full"
             >
               Login
             </button>
             <button
               type="button"
-              class="btn mt-4 bg-transparent border border-[#5F737A] hover:bg-[#4C5E64] hover:text-white text-[#4C5E64] w-full flex gap-2 items-center"
+              className="btn mt-4 bg-transparent border border-[#5F737A] hover:bg-[#4C5E64] hover:text-white text-[#4C5E64] w-full flex gap-2 items-center"
             >
               <FcGoogle size={20} />
               Login with Google

@@ -1,8 +1,56 @@
+"use client";
+import { authClient } from "@/lib/auth-client";
 import Link from "next/link";
+import { redirect } from "next/navigation";
 import React from "react";
 import { FcGoogle } from "react-icons/fc";
+import { Bounce, toast } from "react-toastify";
 
 const SignUpPage = () => {
+  const onSubmit = async (e) => {
+    e.preventDefault();
+    const name = e.target.name.value;
+    const url = e.target.picture.value;
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+
+    const { data, error } = await authClient.signUp.email({
+      name: name,
+      email: email, // required
+      password: password, // required
+      image: url,
+    });
+
+    console.log(data, error);
+    if (data) {
+      toast.success("Sign Up Successful!", {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        transition: Bounce,
+      });
+      // authClient.signOut();
+      redirect("/login");
+    }
+    if (error) {
+      toast.error(`${error.message}`, {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        transition: Bounce,
+      });
+    }
+  };
   return (
     <div className=" bg-[#F3EFEA]">
       <div className="min-h-screen flex items-center justify-center">
@@ -11,13 +59,20 @@ const SignUpPage = () => {
           <span className="mb-4 mt-2 text-center text-[.8rem] block text-gray-400 ">
             Please Enter Your Details
           </span>
-          <form action="">
+          <form onSubmit={onSubmit}>
             <label className="label my-2">Name</label>
             <input
               name="name"
               type="text"
               className="input w-full  outline-none border border-[#5F737A] mb-2"
               placeholder="Name"
+            />
+            <label className="label my-2">Profile Picture (URL)</label>
+            <input
+              name="picture"
+              type="url"
+              className="input w-full  outline-none border border-[#5F737A] mb-2"
+              placeholder="Profile Picture Link"
             />
 
             <label className="label my-2">Email</label>
@@ -38,13 +93,13 @@ const SignUpPage = () => {
 
             <button
               type="submit"
-              class="btn mt-4  bg-[#5F737A] hover:bg-[#4C5E64] text-white w-full"
+              className="btn mt-4  bg-[#5F737A] hover:bg-[#4C5E64] text-white w-full"
             >
               Register
             </button>
             <button
               type="button"
-              class="btn mt-4  bg-transparent border border-[#5F737A] hover:bg-[#4C5E64] hover:text-white text-[#4C5E64] w-full flex gap-2 items-center"
+              className="btn mt-4  bg-transparent border border-[#5F737A] hover:bg-[#4C5E64] hover:text-white text-[#4C5E64] w-full flex gap-2 items-center"
             >
               <FcGoogle size={16} />
               Login with Google
