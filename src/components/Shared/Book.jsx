@@ -3,7 +3,6 @@ import Link from "next/link";
 import React from "react";
 
 const Book = ({ book }) => {
-  console.log(book);
   const { id, title, popularity, image_url, author, price } = book;
   // console.log(book);
   return (
@@ -25,7 +24,7 @@ const Book = ({ book }) => {
         <span className="font-medium text-gray-400 text-[.6rem]">{author}</span>
         <div className="flex justify-between items-center gap-2">
           <h1 className="text-orange-600 font-bold text-xl">${price}</h1>
-          <Link class="btn bg-[#5F737A] hover:bg-[#4C5E64] text-white" href={`/allbooks/${id}`}>
+          <Link className="btn bg-[#5F737A] hover:bg-[#4C5E64] text-white" href={`/allbooks/${id}`}>
             Details
           </Link>
         </div>

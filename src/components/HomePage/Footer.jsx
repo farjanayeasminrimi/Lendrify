@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div>
       <footer className=" text-base-300 bg-[#2F3A3D] pt-10 pb-3 px-4 md:px-10">
-        <div className="  text-base-300 flex  flex-col gap-10  md:flex-row justify-between items-center ">
+        <div className="  text-base-300 flex  flex-col gap-6 md:gap-10  md:flex-row justify-between items-center ">
           <aside>
             <h1 className="text-white text-4xl font-bold mb-4">Lendrify</h1>
             <p className="text-[.9rem] text-[#A8B0B2]">
@@ -13,7 +13,7 @@ const Footer = () => {
               books. Enjoy a seamless reading journey with a clean and intuitive experience.
             </p>
           </aside>
-          <div className="footer flex flex-wrap md:flex-nowrap justify-between gap-2">
+          <div className="footer flex flex-wrap md:flex-nowrap justify-between gap-4">
             <nav>
               <h6 className="text-white font-bold text-xl">Explore</h6>
               <Link href={"/"} className="link link-hover">

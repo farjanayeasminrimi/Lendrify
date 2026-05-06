@@ -8,10 +8,26 @@ export const categoriesData = async () => {
   const data = await res.json();
   return data.categories;
 };
-export const categoryData = async (slug) => {
+export const categoryData = async (slug = "all") => {
   const res = await fetch("http://localhost:3000/data/data.json");
   const data = await res.json();
   // console.log(slug);
+  if (slug === "all") {
+    return data.books;
+  }
   const selectedCategory = data.categories?.find((i) => i.slug === slug);
   return selectedCategory?.books;
+};
+export const searchBookData = async (query = "", categoryBooks = []) => {
+  if (!query || query.trim() === "") {
+    return categoryBooks;
+  }
+
+  const lowerQuery = query.toLowerCase();
+
+  return categoryBooks.filter(
+    (book) =>
+      book.title?.toLowerCase().includes(lowerQuery) ||
+      book.author?.toLowerCase().includes(lowerQuery),
+  );
 };

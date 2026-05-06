@@ -14,9 +14,9 @@ const Latest = async () => {
   console.log(latestRelease);
   return (
     <div>
-      <div className="container mx-auto mt-20 ">
+      <div className="container mx-auto mt-20 px-5 md:px-0">
         <h1 className="text-center text-4xl font-bold text-[#2F3A3D]">Latest Books</h1>
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-6">
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-6 gap-3 md:gap-0">
           <div className="col-span-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 ">
               {latestRelease.slice(0, 8).map((book) => (

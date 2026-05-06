@@ -9,11 +9,11 @@ import { ImProfile } from "react-icons/im";
 
 const Navbar = () => {
   return (
-    <div className="bg-[#e4e1dd] sticky top-0 z-10 shadow-sm">
+    <div className="bg-[#e4e1dd] px-2 md:px-0 sticky top-0 z-10 shadow-sm">
       <div className="navbar container mx-auto  ">
         <div className="navbar-start">
           <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden pl-0">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -65,13 +65,19 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end ">
-          <div className="flex gap-2 items-center">
+          <div className="flex gap-2 justify-center items-center">
             <Link href={"/login"}>
-              <button className="text-[#2F3A3D] font-bold">LogIn</button>
+              <button className="text-[#2F3A3D] font-bold text-[.8rem] md:text-[1rem]">
+                LogIn
+              </button>
             </Link>
-            <span className="font-medium text-gray-500">Or</span>
+            <h1 className="font-medium text-gray-500 text-[.8rem] md:text-[1rem] m-0 leading-none">
+              or
+            </h1>
             <Link href={"/signup"}>
-              <button className="text-[#2F3A3D] font-bold">Sign Up</button>
+              <button className="text-[#2F3A3D] font-bold text-[.8rem] md:text-[1rem]">
+                Sign Up
+              </button>
             </Link>
           </div>
         </div>

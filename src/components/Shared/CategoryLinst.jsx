@@ -14,6 +14,7 @@ export default function CategoryList({ categories }) {
 
     if (category === "all") {
       params.delete("category");
+      // params.set("category", "all");
     } else {
       params.set("category", category);
     }
@@ -22,25 +23,27 @@ export default function CategoryList({ categories }) {
   };
 
   return (
-    <ul className="flex flex-col gap-4 text-center">
-      <li
-        onClick={() => handleCategoryClick("all")}
-        className={`border border-[#2F3A3D]/35 rounded-xs p-2 text-[.8rem] font-medium text-[#2F3A3D] hover:bg-[#2F3A3D]/10 ${!selectedCategory ? "bg-[#2F3A3D]/20" : ""}`}
-      >
-        All Books
-      </li>
-
-      {categories?.map((category) => (
+    <div className="col-span-5 md:col-span-1">
+      <ul className="flex flex-col gap-4 text-center">
         <li
-          key={category.id}
-          onClick={() => handleCategoryClick(category.slug)}
-          className={` border border-[#2F3A3D]/35 rounded-xs p-2 text-[.8rem] font-medium text-[#2F3A3D] hover:bg-[#2F3A3D]/10 ${
-            selectedCategory === category.slug ? "bg-[#2F3A3D]/20" : ""
-          }`}
+          onClick={() => handleCategoryClick("all")}
+          className={`border border-[#2F3A3D]/35 rounded-xs p-2 text-[.8rem] font-medium text-[#2F3A3D] hover:bg-[#2F3A3D]/10 ${!selectedCategory ? "bg-[#2F3A3D]/20" : ""}`}
         >
-          {category.name}
+          All Books
         </li>
-      ))}
-    </ul>
+
+        {categories?.map((category) => (
+          <li
+            key={category.id}
+            onClick={() => handleCategoryClick(category.slug)}
+            className={` border border-[#2F3A3D]/35 rounded-xs p-2 text-[.8rem] font-medium text-[#2F3A3D] hover:bg-[#2F3A3D]/10 ${
+              selectedCategory === category.slug ? "bg-[#2F3A3D]/20" : ""
+            }`}
+          >
+            {category.name}
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }
