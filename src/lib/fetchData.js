@@ -31,3 +31,10 @@ export const searchBookData = async (query = "", categoryBooks = []) => {
       book.author?.toLowerCase().includes(lowerQuery),
   );
 };
+
+export const booksDetailsData = async (id) => {
+  const res = await fetch("http://localhost:3000/data/data.json");
+  const data = await res.json();
+  const detailsData = data.books.find((i) => i.id === parseInt(id));
+  return detailsData;
+};

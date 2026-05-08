@@ -8,11 +8,11 @@ import React from "react";
 const AllBookPage = async ({ searchParams }) => {
   const categories = await categoriesData();
   const { category, search } = await searchParams;
+  console.log(category, "category");
   const categoryBooks = await categoryData(category);
-  console.log(search);
-  console.log("searchParams", searchParams);
+  // console.log(search);
   const searchBooksData = await searchBookData(search, categoryBooks);
-  console.log(searchBooksData);
+  // console.log(searchBooksData);
 
   const allBooks = await booksData();
   return (
