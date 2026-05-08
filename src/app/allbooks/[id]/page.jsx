@@ -3,6 +3,7 @@ import image from "@/assets/books/atomic habits.jpg";
 import Image from "next/image";
 import Link from "next/link";
 import { booksDetailsData } from "@/lib/fetchData";
+import BorrowBtn from "@/components/Shared/BorrowBtn";
 
 const CategoryBooks = async ({ params }) => {
   const { id } = await params;
@@ -32,9 +33,7 @@ const CategoryBooks = async ({ params }) => {
             Available Quantity: {available_quantity}
           </h5>
           <h2 className="text-orange-600 font-bold text-xl">${price}</h2>
-          <Link className="btn bg-[#5F737A] hover:bg-[#4C5E64] text-white" href={"/"}>
-            <button>Borrow This Book</button>
-          </Link>
+          <BorrowBtn></BorrowBtn>
         </div>
       </div>
     </div>

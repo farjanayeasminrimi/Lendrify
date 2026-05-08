@@ -46,6 +46,23 @@ const LoginPage = () => {
       });
     }
   };
+  const socialHandler = async () => {
+    await authClient.signIn.social({
+      provider: "google",
+      callbackURL: "/",
+    });
+    toast.success("Sign Up Successful!", {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: false,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+      transition: Bounce,
+    });
+  };
   return (
     <div className=" bg-[#F3EFEA]">
       <div className="min-h-screen flex items-center justify-center">
@@ -79,6 +96,7 @@ const LoginPage = () => {
             </button>
             <button
               type="button"
+              onClick={socialHandler}
               className="btn mt-4 bg-transparent border border-[#5F737A] hover:bg-[#4C5E64] hover:text-white text-[#4C5E64] w-full flex gap-2 items-center"
             >
               <FcGoogle size={20} />

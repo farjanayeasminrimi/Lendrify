@@ -11,7 +11,7 @@ const Latest = async () => {
     (a, b) => new Date(b.release_date) - new Date(a.release_date),
   );
 
-  console.log(latestRelease);
+  // console.log(latestRelease);
   return (
     <div>
       <div className="container mx-auto mt-20 px-5 md:px-0">

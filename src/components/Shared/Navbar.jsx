@@ -6,6 +6,7 @@ import NavLink from "./NavLink";
 import { IoHomeOutline } from "react-icons/io5";
 import { LiaSwatchbookSolid } from "react-icons/lia";
 import { ImProfile } from "react-icons/im";
+import LoginButtons from "./LoginButtons";
 
 const Navbar = () => {
   return (
@@ -65,21 +66,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end ">
-          <div className="flex gap-2 justify-center items-center">
-            <Link href={"/login"}>
-              <button className="text-[#2F3A3D] font-bold text-[.8rem] md:text-[1rem]">
-                LogIn
-              </button>
-            </Link>
-            <h1 className="font-medium text-gray-500 text-[.8rem] md:text-[1rem] m-0 leading-none">
-              or
-            </h1>
-            <Link href={"/signup"}>
-              <button className="text-[#2F3A3D] font-bold text-[.8rem] md:text-[1rem]">
-                Sign Up
-              </button>
-            </Link>
-          </div>
+          <LoginButtons></LoginButtons>
         </div>
       </div>
     </div>
