@@ -1,3 +1,4 @@
+import EditBtn from "@/components/Shared/EditBtn";
 import { auth } from "@/lib/auth";
 import { headers } from "next/headers";
 import Image from "next/image";
@@ -29,9 +30,7 @@ const MyProfilePage = async () => {
               General Member
             </span>
           </div>
-          <div>
-            <button className="btn bg-[#5F737A] hover:bg-[#4C5E64] text-white">Edit</button>
-          </div>
+          <EditBtn></EditBtn>
         </div>
       </div>
     </div>
