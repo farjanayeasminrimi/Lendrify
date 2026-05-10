@@ -1,21 +1,15 @@
 export const booksData = async () => {
-  const res = await fetch(
-    "https://lendrify-ba2g24git-farjanayeasminrimis-projects.vercel.app/data/data.json",
-  );
+  const res = await fetch("http://localhost:3000/data/data.json");
   const data = await res.json();
   return data.books;
 };
 export const categoriesData = async () => {
-  const res = await fetch(
-    "https://lendrify-ba2g24git-farjanayeasminrimis-projects.vercel.app/data/data.json",
-  );
+  const res = await fetch("http://localhost:3000/data/data.json");
   const data = await res.json();
   return data.categories;
 };
 export const categoryData = async (slug = "all") => {
-  const res = await fetch(
-    "https://lendrify-ba2g24git-farjanayeasminrimis-projects.vercel.app/data/data.json",
-  );
+  const res = await fetch("http://localhost:3000/data/data.json");
   const data = await res.json();
   // console.log(slug);
   if (slug === "all") {
@@ -39,9 +33,7 @@ export const searchBookData = async (query = "", categoryBooks = []) => {
 };
 
 export const booksDetailsData = async (id) => {
-  const res = await fetch(
-    "https://lendrify-ba2g24git-farjanayeasminrimis-projects.vercel.app/data/data.json",
-  );
+  const res = await fetch("http://localhost:3000/data/data.json");
   const data = await res.json();
   const detailsData = data.books.find((i) => i.id === parseInt(id));
   return detailsData;
