@@ -18,10 +18,10 @@ export default function Hero() {
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
-        // autoplay={{
-        //   delay: 2500,
-        //   disableOnInteraction: true,
-        // }}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: true,
+        }}
         pagination={{
           clickable: true,
         }}
