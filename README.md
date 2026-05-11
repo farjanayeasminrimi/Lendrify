@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Lendrify
+
+A modern and responsive book lending platform where users can explore books, manage categories, and build reading habits through a clean and user-friendly interface.
+
+## Live Website
+
+Live URL: https://lendrify.vercel.app/
+
+GitHub Repository: https://github.com/farjanayeasminrimi/Lendrify
+
+---
+
+## Project Purpose
+
+Lendrify is designed to provide an easy and organized way to browse and manage books online. The project focuses on creating a modern UI, smooth user experience, and efficient book categorization system for readers and book lovers.
+
+---
+
+## Key Features
+
+- Browse books by categories
+- Search functionality for finding books quickly
+- Modern and responsive UI design
+- Fast performance using Next.js
+- Clean layout with reusable components
+- Mobile-friendly design
+- Dynamic routing for individual book details
+- JSON-based book data management
+
+---
+
+## Technologies Used
+
+- Next.js
+- React.js
+- Tailwind CSS
+- DaisyUI
+- React Icons
+- JavaScript
+- JSON
+
+---
+
+## NPM Packages Used
+
+```bash
+npm install react-icons
+npm install react-toastify
+npm install swiper
+npm install motion
+npm install daisyui
+```
+
+---
 
 ## Getting Started
 
-First, run the development server:
+Clone the project and run it locally:
+
+```bash
+git clone https://github.com/farjanayeasminrimi/Lendrify.git
+```
+
+```bash
+cd Lendrify
+```
+
+```bash
+npm install
+```
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Developer
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Developed by Farjana Yeasmin Rimi
