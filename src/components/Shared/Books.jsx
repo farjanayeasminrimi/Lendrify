@@ -4,7 +4,7 @@ import Book from "./Book";
 const Books = ({ categoryBooks }) => {
   // console.log(categoryBooks);
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
       {categoryBooks?.map((book, index) => (
         <Book key={index} book={book}></Book>
       ))}

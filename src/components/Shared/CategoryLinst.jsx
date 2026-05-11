@@ -23,7 +23,7 @@ export default function CategoryList({ categories }) {
   };
 
   return (
-    <div className="col-span-5 md:col-span-1">
+    <div className="col-span-5 md:col-span-2">
       <ul className="flex flex-col gap-4 text-center">
         <li
           onClick={() => handleCategoryClick("all")}
