@@ -42,7 +42,7 @@ const AllBookPage = async ({ searchParams }) => {
           {/* another way */}
           <CategoryList categories={categories}></CategoryList>
           {/* books */}
-          <div className="col-span-5 md:col-span-4 ">
+          <div className="col-span-5 md:col-span-3 lg:col-span-4 ">
             <Books categoryBooks={searchBooksData}></Books>
           </div>
         </div>
