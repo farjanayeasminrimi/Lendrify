@@ -48,8 +48,9 @@ export const searchBookData = async (query = "", categoryBooks = []) => {
 };
 
 export const booksDetailsData = async (id) => {
-  const res = await fetch("http://localhost:3000/data/data.json");
-  const data = await res.json();
+  // const res = await fetch("http://localhost:3000/data/data.json");
+  // const data = await res.json();
+  const data = urlMaker("data.json");
   const detailsData = data.books.find((i) => i.id === parseInt(id));
   return detailsData;
 };

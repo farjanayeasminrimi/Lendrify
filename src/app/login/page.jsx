@@ -51,17 +51,17 @@ const LoginPage = () => {
       provider: "google",
       callbackURL: "/",
     });
-    toast.success("Sign Up Successful!", {
-      position: "top-center",
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: false,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "colored",
-      transition: Bounce,
-    });
+    // toast.success("Sign Up Successful!", {
+    //   position: "top-center",
+    //   autoClose: 5000,
+    //   hideProgressBar: false,
+    //   closeOnClick: false,
+    //   pauseOnHover: true,
+    //   draggable: true,
+    //   progress: undefined,
+    //   theme: "colored",
+    //   transition: Bounce,
+    // });
   };
   return (
     <div className=" bg-[#F3EFEA]">
