@@ -3,6 +3,8 @@
 Lendrify is a modern and responsive book lending platform that allows users to explore books, manage categories, and build reading habits through a clean and user-friendly interface. It focuses on delivering a smooth browsing experience with organized book data and intuitive navigation.
 
 ---
+![Lendrify Mockup](https://i.ibb.co.com/Gfcyw2bp/Lendrify.png)
+---
 
 ## Live Links
 
