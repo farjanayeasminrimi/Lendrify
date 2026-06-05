@@ -1,80 +1,47 @@
 # Lendrify
 
-A modern and responsive book lending platform where users can explore books, manage categories, and build reading habits through a clean and user-friendly interface.
-
-## Live Website
-
-Live URL: https://lendrify.vercel.app/
-
-GitHub Repository: https://github.com/farjanayeasminrimi/Lendrify
+Lendrify is a modern and responsive book lending platform that allows users to explore books, manage categories, and build reading habits through a clean and user-friendly interface. It focuses on delivering a smooth browsing experience with organized book data and intuitive navigation.
 
 ---
 
-## Project Purpose
+## Live Links
 
-Lendrify is designed to provide an easy and organized way to browse and manage books online. The project focuses on creating a modern UI, smooth user experience, and efficient book categorization system for readers and book lovers.
+- Live Website: https://lendrify.vercel.app/
+- GitHub Repository: https://github.com/farjanayeasminrimi/Lendrify
 
 ---
 
 ## Key Features
 
-- Browse books by categories
-- Search functionality for finding books quickly
-- Modern and responsive UI design
-- Fast performance using Next.js
-- Clean layout with reusable components
-- Mobile-friendly design
-- Dynamic routing for individual book details
-- JSON-based book data management
+### Book Browsing by Categories
+Users can easily explore books based on different categories, making it simple to discover relevant content and improve reading habits through structured organization.
+
+### Search Functionality
+A fast and efficient search system allows users to quickly find specific books without browsing through multiple pages, improving accessibility and user experience.
+
+### Dynamic Book Details
+Each book has a dedicated dynamic route page that displays detailed information, ensuring a clear and focused reading experience for every item.
+
+### Modern and Responsive UI
+The platform is built with a clean and modern interface that adapts seamlessly across mobile, tablet, and desktop devices.
+
+### Reusable Component Structure
+The project uses modular and reusable components, making the codebase clean, scalable, and easier to maintain.
+
+### Fast Performance
+Built with Next.js, Lendrify ensures optimized rendering and smooth navigation for a fast and efficient user experience.
+
+### JSON-Based Data Management
+Book data is managed using structured JSON, enabling simple updates and flexible content handling.
 
 ---
 
-## Technologies Used
+## Tech Stack
 
-- Next.js
-- React.js
-- Tailwind CSS
-- DaisyUI
-- React Icons
-- JavaScript
+- Next.js  
+- React.js  
+- Tailwind CSS  
+- DaisyUI  
+- React Icons  
+- JavaScript  
 - JSON
-
----
-
-## NPM Packages Used
-
-```bash
-npm install react-icons
-npm install react-toastify
-npm install swiper
-npm install motion
-npm install daisyui
-```
-
----
-
-## Getting Started
-
-Clone the project and run it locally:
-
-```bash
-git clone https://github.com/farjanayeasminrimi/Lendrify.git
-```
-
-```bash
-cd Lendrify
-```
-
-```bash
-npm install
-```
-
-```bash
-npm run dev
-```
-
----
-
-## Developer
-
-Developed by Farjana Yeasmin Rimi
